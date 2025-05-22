@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "AwesomeProject",
+    "slug": "AwesomeProject",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier":"com.haider1056.AwesomeProject"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.haider1056.AwesomeProject"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "permissions": [
+      "CAMERA",
+      "RECORD_AUDIO"
+    ],
+    
+    "extra": {
+      "eas": {
+        "projectId": "742ecf66-0768-4619-b499-7584da0d012e"
+      }
+    },
+    "owner": "haider1056",
+    "scheme":"App"
+  }
+}

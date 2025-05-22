@@ -1,0 +1,107 @@
+import React from 'react';
+import { View, Text, Image, TouchableOpacity, StyleSheet, SafeAreaView, ScrollView } from 'react-native';
+import TopNavbar from './TopNavbar';
+import { useNavigation } from '@react-navigation/native'; 
+
+const ProductPage = () => {
+  const navigation = useNavigation(); 
+
+  const handleTryOn = () => {
+  
+  };
+
+  const handleBuyNow = () => {
+    navigation.navigate('Checkout'); 
+  };
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+  return (
+    <SafeAreaView>
+      <ScrollView>
+        <TopNavbar />
+        <View style={styles.container}>
+          <Image
+            source={require('./assets/1.png')}
+            style={styles.glassesImage}
+          />
+
+          <View style={styles.middleSection}>
+            <TouchableOpacity
+              style={styles.button}
+              onPress={handleTryOn}
+            >
+              <Text style={styles.buttonText}>TRY ON</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={styles.button}
+              onPress={handleBuyNow}
+            >
+              <Text style={styles.buttonText}>BUY NOW</Text>
+            </TouchableOpacity>
+          </View>
+
+          <View style={styles.description}>
+            <Text style={styles.point}>- Lightweight for extended comfort</Text>
+            <Text style={styles.point}>- Timeless and versatile fashion statement</Text>
+            <Text style={styles.point}>- Suitable for various face shapes</Text>
+            <Text style={styles.point}>- Reliable vision enhancement solution</Text>
+            <Text style={styles.point}>- Durable materials for long-lasting use</Text>
+            <Text style={styles.point}>- Easy to clean and maintain</Text>
+            <Text style={styles.point}>- Enhances your personal style</Text>
+            <Text style={styles.point}>- Affordable and budget-friendly option</Text>
+            <Text style={styles.point}>- Available in multiple color options</Text>
+            <Text style={styles.point}>- A perfect blend of form and function</Text>
+          </View>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+  },
+  glassesImage: {
+    marginTop: 30,
+    marginBottom: 30,
+    width: '70%',
+    height: 130,
+    resizeMode: 'cover',
+  },
+  middleSection: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+  },
+  button: {
+    backgroundColor: 'blue',
+    padding: 10,
+    width: 150,
+    margin: 10,
+    alignItems: 'center',
+  },
+  buttonText: {
+    fontSize: 18,
+    color: 'white',
+  },
+  description: {
+    marginTop: 22,
+    flex: 1,
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+    padding: 10,
+  },
+  point: {
+    marginTop: 5,
+    fontSize: 20,
+    marginBottom: 5,
+  },
+});
+
+export default ProductPage;
