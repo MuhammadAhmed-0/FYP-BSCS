@@ -26,6 +26,8 @@ The **Virtual Try-On Glasses** is a mobile application that allows users to virt
 - **Flask:** Backend API for managing user authentication, data, and processing face shape analysis.
 - **Python:** Used with Flask for handling API endpoints.
 
+### DataBase
+- **PostgreSQL**
 
 ## Installation
 
