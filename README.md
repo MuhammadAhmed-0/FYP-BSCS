@@ -29,6 +29,18 @@ The **Virtual Try-On Glasses** is a mobile application that allows users to virt
 ### DataBase
 - **PostgreSQL**
 
+## UI
+![Splash Screen](https://github.com/user-attachments/assets/6274f4a6-7dc2-4fdd-bfed-6f826cf553cc)
+![Camera Screen](https://github.com/user-attachments/assets/c3193489-27b1-4009-a3fa-ad762c40c550)
+![Main Screen](https://github.com/user-attachments/assets/90c4d41c-1455-4e1e-84c0-c6f461b35c1f)
+![Categories](https://github.com/user-attachments/assets/e2bf06f2-99d9-4e44-b055-99f7f0630520)
+![Product Page](https://github.com/user-attachments/assets/ac7202df-a66f-4915-9251-8fc593b0c868)
+![Checkout page](https://github.com/user-attachments/assets/e39d3d2c-fce8-46db-bcb8-787be18d1a63)
+
+
+
+
+
 ## Installation
 
 ### Prerequisites
